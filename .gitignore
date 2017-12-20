@@ -1,4 +1,5 @@
 # checkpoints
 .ipynb_checkpoints
 
-mac_sim*
+mac_sim.app
+mac_sim.app/*
