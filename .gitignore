@@ -7,4 +7,4 @@ mac_sim.app/*
 # collected images & logs from training
 IMG/*
 IMG.zip
-#driving_log.csv
+*driving_log.csv
