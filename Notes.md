@@ -1,6 +1,5 @@
 Notes:
 - Keras added
-- socketio
 - eventlet
 - flask-socketio
 
