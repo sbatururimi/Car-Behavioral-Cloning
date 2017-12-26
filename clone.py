@@ -44,9 +44,9 @@ from keras.layers.pooling import MaxPooling2D
 # LeNet
 model = Sequential()
 model.add(Lambda(lambda x: (x / 255.0) - 0.5, input_shape=(160,320,3)))
-model.add(Convolution2D(6, 5, 5, activation='relu'))
+model.add(Conv2D(6, (5, 5), activation='relu'))
 model.add(MaxPooling2D())
-model.add(Convolution2D(6, 5, 5, activation='relu'))
+model.add(Conv2D(6, (5, 5), activation='relu'))
 model.add(MaxPooling2D())
 model.add(Flatten())
 model.add(Dense(120))
