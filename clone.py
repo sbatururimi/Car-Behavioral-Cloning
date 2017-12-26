@@ -77,8 +77,8 @@ with open("../data-car-behavioral/driving_log.csv") as csvfile:
     	image_right = cv2.imread(current_path_right)
 
     	# add images and angles to data set
-    	car_images.extend(image_center, image_left, image_right)
-    	steering_angles.extend(steering_center, steering_left, steering_right)
+    	car_images.extend([image_center, image_left, image_right])
+    	steering_angles.extend([steering_center, steering_left, steering_right])
 
 
 
