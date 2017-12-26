@@ -56,28 +56,20 @@ with open("../data-car-behavioral/driving_log.csv") as csvfile:
     	steering_center = float(line[3])
 
     	# create adjusted steering measurements for the side camera images
-    	correction = 0.2
+    	correction = steering_center * 0.1 # 10%
     	steering_left = steering_center + correction
     	steering_right = steering_center - correction
 
     	# read in images from center, left and right cameras
-    	source_path_center = line[0]
-    	filename = source_path_center.split('/')[-1]
-    	current_path_center = '../data-car-behavioral/IMG/' + filename
-    	image_center = cv2.imread(current_path_center)
+    	for i in range(3):
+	    	source_path = line[i]
+	    	filename = source_path.split('/')[-1]
+	    	current_path = '../data-car-behavioral/IMG/' + filename
+	    	image = cv2.imread(current_path)
+	    	# add images to data set
+	    	car_images.append(image)
 
-    	source_path_left = line[1]
-    	filename = source_path_left.split('/')[-1]
-    	current_path_left = '../data-car-behavioral/IMG/' + filename
-    	image_left = cv2.imread(current_path_left)
-
-    	source_path_right = line[2]
-    	filename = source_path_right.split('/')[-1]
-    	current_path_right = '../data-car-behavioral/IMG/' + filename
-    	image_right = cv2.imread(current_path_right)
-
-    	# add images and angles to data set
-    	car_images.extend([image_center, image_left, image_right])
+    	# add angles to data set	    	
     	steering_angles.extend([steering_center, steering_left, steering_right])
 
 
