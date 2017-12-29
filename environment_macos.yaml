@@ -1,8 +1,8 @@
 name: autonomous-car
 channels:
   - menpo
-  - anaconda
   - conda-forge
+  - anaconda
   - defaults
 dependencies:
   - appnope=0.1.0=py35_0
@@ -88,31 +88,21 @@ dependencies:
   - xz=5.2.3=0
   - yaml=0.1.6=0
   - zlib=1.2.11=0
-  - asn1crypto=0.22.0=py35_0
+  - ca-certificates=2017.11.5=0
   - certifi=2016.2.28=py35_0
-  - cffi=1.11.2=py35_0
   - click=6.7=py35_0
-  - cryptography=2.1.4=py35_0
-  - eventlet=0.21.0=py35_0
   - ffmpeg=3.2.4=1
   - flask=0.12.2=py35_0
   - flask-socketio=2.9.2=py35_0
-  - greenlet=0.4.12=py35_0
-  - idna=2.6=py35_1
   - imageio=2.1.2=py35_0
   - itsdangerous=0.24=py_2
-  - libffi=3.2.1=3
+  - keras=2.0.9=py35_0
   - moviepy=0.2.3.2=py35_0
   - openssl=1.0.2l=0
-  - pycparser=2.18=py35_0
-  - pyopenssl=17.4.0=py35_0
   - python-engineio=1.7.0=py35_0
   - python-socketio=1.8.1=py_0
   - tensorflow=1.0.0=py35_0
   - x264=20131217=3
-  - ca-certificates=2017.08.26=ha1e5d58_0
-  - keras=2.0.8=py35h86bcf3e_0
-  - matplotlib=2.0.2=np113py35_0
   - opencv3=3.1.0=py35_0
   - tbb=4.3_20141023=0
 prefix: /Users/virt/anaconda3/envs/autonomous-car
