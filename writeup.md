@@ -68,7 +68,7 @@ The shadow and shiffting technics were reported to be often effective.
 ```
  x/127.5 - 1.
 ```
-* NVidia architecture was used and the model was trained on a Amazon GPU instance. After more that 2 days of training and experimenting, the model was robust and fast enough by using a batch size of 32 (image and labels-steering angles for each batch). The above preprocessing steps were applied on the CPU.
+* NVidia architecture was used and the model was trained on several machines at the same time: Amazon GPU instance for more epochs and on a CPU machine for loss epoch. After more that 2 days of training and experimenting, the model was robust and fast enough by using a batch size of 32 (image and labels-steering angles for each batch). The above preprocessing steps were applied on the CPU.
 
 * I reduced the number of epochs from 8 to 5 first and then to 3.
 * Finally, as the cropping step was not applied using the Cropping2D Keras layer, I changed a litle the drive.py script in order to scale the images sent by the cameras to the same size as the images we had during the training after the cropping step.
@@ -172,4 +172,4 @@ We could improve the model
 - by adding noising technics and playing with the shadow augmentation 
 - by driving on this second track for generalization
 
-We could finally tune the model with dropout to prevent any potential overfit. What is also quite interesting is that training on g2.2xlarge(GPU) Amazon instance was notmuch faster when using generators to create training and validation samples. The reason is apparently due to the augmentation preformedin the CPU and we could rather use tensorflow API in order to augment the dataset on the GPU.
+We could finally tune the model with dropout to prevent any potential overfit. What is also quite interesting is that training on g2.2xlarge(GPU) Amazon instance was notmuch faster when using generators to create training and validation samples. The reason is apparently due to the augmentation preformedin the CPU and we could rather use tensorflow API in order to augment the dataset on the GPU. We can also try tensorflow tfrecords storing images in a queue.
