@@ -1,109 +1,128 @@
 name: autonomous-car
 channels:
-  - menpo
-  - conda-forge
-  - anaconda
-  - defaults
+- menpo
+- conda-forge
+- anaconda
+- defaults
 dependencies:
-  - appnope=0.1.0=py35_0
-  - bleach=1.5.0=py35_0
-  - bzip2=1.0.6=3
-  - cycler=0.10.0=py35_0
-  - decorator=4.0.11=py35_0
-  - entrypoints=0.2.3=py35_0
-  - freetype=2.5.5=2
-  - h5py=2.7.0=np113py35_0
-  - hdf5=1.8.17=2
-  - html5lib=0.9999999=py35_0
-  - icu=54.1=0
-  - ipykernel=4.6.1=py35_0
-  - ipython=6.1.0=py35_0
-  - ipython_genutils=0.2.0=py35_0
-  - ipywidgets=6.0.0=py35_0
-  - jbig=2.1=0
-  - jedi=0.10.2=py35_2
-  - jinja2=2.9.6=py35_0
-  - jpeg=9b=0
-  - jsonschema=2.6.0=py35_0
-  - jupyter=1.0.0=py35_3
-  - jupyter_client=5.1.0=py35_0
-  - jupyter_console=5.2.0=py35_0
-  - jupyter_core=4.3.0=py35_0
-  - libcxx=4.0.1=h579ed51_0
-  - libcxxabi=4.0.1=hebd6815_0
-  - libiconv=1.14=0
-  - libpng=1.6.30=1
-  - libprotobuf=3.2.0=0
-  - libtiff=4.0.6=3
-  - markupsafe=1.0=py35_0
-  - mistune=0.7.4=py35_0
-  - mkl=2017.0.3=0
-  - mock=2.0.0=py35_0
-  - nbconvert=5.2.1=py35_0
-  - nbformat=4.4.0=py35_0
-  - networkx=1.11=py35_0
-  - notebook=5.0.0=py35_0
-  - numpy=1.13.1=py35_0
-  - olefile=0.44=py35_0
-  - pandas=0.20.3=py35_0
-  - pandocfilters=1.4.2=py35_0
-  - path.py=10.3.1=py35_0
-  - pbr=1.10.0=py35_0
-  - pexpect=4.2.1=py35_0
-  - pickleshare=0.7.4=py35_0
-  - pillow=4.2.1=py35_0
-  - pip=9.0.1=py35_1
-  - prompt_toolkit=1.0.15=py35_0
-  - protobuf=3.2.0=py35_0
-  - ptyprocess=0.5.2=py35_0
-  - pygments=2.2.0=py35_0
-  - pyparsing=2.2.0=py35_0
-  - pyqt=5.6.0=py35_2
-  - python=3.5.4=0
-  - python-dateutil=2.6.1=py35_0
-  - pytz=2017.2=py35_0
-  - pywavelets=0.5.2=np113py35_0
-  - pyyaml=3.12=py35_0
-  - pyzmq=16.0.2=py35_0
-  - qt=5.6.2=2
-  - qtconsole=4.3.1=py35_0
-  - readline=6.2=2
-  - scikit-learn=0.19.0=np113py35_0
-  - scipy=0.19.1=np113py35_0
-  - setuptools=36.4.0=py35_1
-  - simplegeneric=0.8.1=py35_1
-  - sip=4.18=py35_0
-  - six=1.10.0=py35_0
-  - sqlite=3.13.0=0
-  - terminado=0.6=py35_0
-  - testpath=0.3.1=py35_0
-  - tk=8.5.18=0
-  - tornado=4.5.2=py35_0
-  - tqdm=4.11.2=py35_0
-  - traitlets=4.3.2=py35_0
-  - wcwidth=0.1.7=py35_0
-  - werkzeug=0.12.2=py35_0
-  - wheel=0.29.0=py35_0
-  - widgetsnbextension=3.0.2=py35_0
-  - xz=5.2.3=0
-  - yaml=0.1.6=0
-  - zlib=1.2.11=0
-  - ca-certificates=2017.11.5=0
-  - certifi=2016.2.28=py35_0
-  - click=6.7=py35_0
-  - ffmpeg=3.2.4=1
-  - flask=0.12.2=py35_0
-  - flask-socketio=2.9.2=py35_0
-  - imageio=2.1.2=py35_0
-  - itsdangerous=0.24=py_2
-  - keras=2.0.9=py35_0
-  - moviepy=0.2.3.2=py35_0
-  - openssl=1.0.2l=0
-  - python-engineio=1.7.0=py35_0
-  - python-socketio=1.8.1=py_0
-  - tensorflow=1.0.0=py35_0
-  - x264=20131217=3
-  - opencv3=3.1.0=py35_0
-  - tbb=4.3_20141023=0
+- bzip2=1.0.6=3
+- entrypoints=0.2.3=py35_0
+- h5py=2.7.0=np113py35_0
+- icu=54.1=0
+- jedi=0.10.2=py35_2
+- jupyter=1.0.0=py35_3
+- libcxx=4.0.1=h579ed51_0
+- libcxxabi=4.0.1=hebd6815_0
+- libprotobuf=3.2.0=0
+- mkl=2017.0.3=0
+- nbconvert=5.2.1=py35_0
+- numpy=1.13.1=py35_0
+- pandas=0.20.3=py35_0
+- pandocfilters=1.4.2=py35_0
+- qt=5.6.2=2
+- readline=6.2=2
+- scikit-learn=0.19.0=np113py35_0
+- scipy=0.19.1=np113py35_0
+- setuptools=36.4.0=py35_1
+- simplegeneric=0.8.1=py35_1
+- tk=8.5.18=0
+- appnope=0.1.0=py35_0
+- asn1crypto=0.22.0=py35_0
+- bleach=1.5.0=py35_0
+- ca-certificates=2017.11.5=0
+- certifi=2016.2.28=py35_0
+- cffi=1.11.2=py35_0
+- click=6.7=py35_0
+- cryptography=2.1.4=py35_0
+- cycler=0.10.0=py35_0
+- decorator=4.0.11=py35_0
+- eventlet=0.21.0=py35_0
+- ffmpeg=3.2.4=1
+- flask=0.12.2=py35_0
+- flask-socketio=2.9.2=py35_0
+- greenlet=0.4.12=py35_0
+- hdf5=1.8.17=2
+- html5lib=0.9999999=py35_0
+- idna=2.6=py35_1
+- imageio=2.1.2=py35_0
+- ipykernel=4.6.1=py35_0
+- ipython=6.1.0=py35_0
+- ipython_genutils=0.2.0=py35_0
+- ipywidgets=6.0.0=py35_0
+- itsdangerous=0.24=py_2
+- jbig=2.1=0
+- jinja2=2.9.6=py35_0
+- jpeg=9b=0
+- jsonschema=2.6.0=py35_0
+- jupyter_client=5.1.0=py35_0
+- jupyter_console=5.2.0=py35_0
+- jupyter_core=4.3.0=py35_0
+- libffi=3.2.1=3
+- libiconv=1.14=0
+- libsodium=1.0.15=1
+- markupsafe=1.0=py35_0
+- mistune=0.7.4=py35_0
+- mock=2.0.0=py35_0
+- moviepy=0.2.3.2=py35_0
+- nbformat=4.4.0=py35_0
+- networkx=1.11=py35_0
+- notebook=5.0.0=py35_0
+- olefile=0.44=py35_0
+- openssl=1.0.2l=0
+- path.py=10.3.1=py35_0
+- pbr=1.10.0=py35_0
+- pexpect=4.2.1=py35_0
+- pickleshare=0.7.4=py35_0
+- pip=9.0.1=py35_1
+- prompt_toolkit=1.0.15=py35_0
+- protobuf=3.2.0=py35_0
+- ptyprocess=0.5.2=py35_0
+- pycparser=2.18=py35_0
+- pygments=2.2.0=py35_0
+- pyopenssl=17.4.0=py35_0
+- pyparsing=2.2.0=py35_0
+- pyqt=5.6.0=py35_2
+- python=3.5.4=0
+- python-dateutil=2.6.1=py35_0
+- python-engineio=1.7.0=py35_0
+- python-socketio=1.8.1=py_0
+- pytz=2017.2=py35_0
+- pywavelets=0.5.2=np113py35_0
+- pyyaml=3.12=py35_0
+- pyzmq=16.0.2=py35_0
+- qtconsole=4.3.1=py35_0
+- sip=4.18=py35_0
+- six=1.10.0=py35_0
+- sqlite=3.13.0=0
+- tensorflow=1.0.0=py35_0
+- terminado=0.6=py35_0
+- testpath=0.3.1=py35_0
+- tornado=4.5.2=py35_0
+- tqdm=4.11.2=py35_0
+- traitlets=4.3.2=py35_0
+- wcwidth=0.1.7=py35_0
+- webencodings=0.5=py35_0
+- werkzeug=0.12.2=py35_0
+- wheel=0.29.0=py35_0
+- widgetsnbextension=3.0.2=py35_0
+- x264=20131217=3
+- xz=5.2.3=0
+- yaml=0.1.6=0
+- zeromq=4.1.5=0
+- zlib=1.2.11=0
+- freetype=2.8=h12048fb_1
+- libpng=1.6.32=hd1e8b91_4
+- libtiff=4.0.9=h0dac147_0
+- matplotlib=2.1.1=py35h2fb3e9e_0
+- pillow=4.2.1=py35h0180db1_0
+- opencv3=3.1.0=py35_0
+- tbb=4.3_20141023=0
+- pip:
+  - ipython-genutils==0.2.0
+  - jupyter-client==5.1.0
+  - jupyter-console==5.2.0
+  - jupyter-core==4.3.0
+  - keras==2.1.2
+  - prompt-toolkit==1.0.15
 prefix: /Users/virt/anaconda3/envs/autonomous-car
 
