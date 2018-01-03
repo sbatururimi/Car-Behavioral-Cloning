@@ -3,3 +3,5 @@
 
 mac_sim.app
 mac_sim.app/*
+
+*.h5
