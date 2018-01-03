@@ -161,7 +161,7 @@ I finally randomly shuffled the data set and put 20% of the data into a validati
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 3 as evidenced by the following tests.
 ![alt text][image2]
 
-Here 5 epochs were used but I tested also 8 epochs which gave me similar results.
+Here 3 epochs were used but I tested also 8 epochs which gave me similar results.
 
 I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
