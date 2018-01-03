@@ -164,3 +164,12 @@ I used this training data for training the model. The validation set helped dete
 Here 5 epochs were used but I tested also 8 epochs which gave me similar results.
 
 I used an adam optimizer so that manually training the learning rate wasn't necessary.
+
+
+## What next
+The model never saw images from the second track. After training the model on the first track, the car drive directly off the road on teh second track.
+We could improve the model 
+- by adding noising technics and playing with the shadow augmentation 
+- by driving on this second track for generalization
+
+We could finally tune the model with dropout to prevent any potential overfit. What is also quite interesting is that training on g2.2xlarge(GPU) Amazon instance was notmuch faster when using generators to create training and validation samples. The reason is apparently due to the augmentation preformedin the CPU and we could rather use tensorflow API in order to augment the dataset on the GPU.
